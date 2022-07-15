@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:ev='http://www.w3.org/2001/xml-events' xmlns:w2='http://www.inswave.com/websquare' xmlns:xf='http://www.w3.org/2002/xforms' lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>경북대학교</title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+    <script type="text/javascript">
+      window.onload = init;
+      var WebSquareExternal = {
+        "baseURI": "/websquare/",
+        "w2xPath" : "/stddm/lsspr/public/lectPlnInqr.xml",
+        "loginFailMsg" : "",
+        "locale" : "ko"
+      };
+
+      var gCsrfTokenHeaderName = '';
+      var gCsrfTokenParameterName = '';
+      var gCsrfToken = '';
+      var gReportServerPage = 'https://ozrpt.knu.ac.kr/view/report_view.jsp';
+      var gItsmServerRequestPage = 'https://intsm.knu.ac.kr' ? 'https://intsm.knu.ac.kr/webview/main/viewmain.knu' : '';
+      //var gReportServerPage = "http://localhost:9090/view/report_view.jsp";
+      var gSsoCheckServerPage = 'https://knusso.knu.ac.kr/openapi/checkserver';
+      var gUserInfo = {}
+      var gSystemId = "kuptl-kcore-web";
+
+      if(!WebSquareExternal.w2xPath){
+        WebSquareExternal.w2xPath = '/html/main.xml';
+      }
+
+      function init() {
+        try{
+          if(WebSquareExternal.loginFailMsg) alert(WebSquareExternal.loginFailMsg);
+          WebSquare.startApplication(WebSquareExternal.w2xPath);
+        } catch(e) {
+          alert(e.message);
+        }
+      }
+    </script>
+    <script type="text/javascript" src="/javascript.wq?q=/bootloader"></script>
+  </head>
+<body>
+
+</body>
+</html>
